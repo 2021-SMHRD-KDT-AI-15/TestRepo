@@ -6,11 +6,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.smhrd</groupId>
-	<artifactId>MessageSystem</artifactId>
+	<artifactId>MavenSample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>MessageSystem Maven Webapp</name>
+	<name>MavenSample Maven Webapp</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
@@ -20,9 +20,9 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
 
-
-	<!-- dependencies : 사용할 라이브러리들을 모아 관리할 수 있는 태그 -->
+	<!-- 프로젝트에서 사용하고자 하는 라이브러리를 정리할 수 있는 태그 -->
 	<dependencies>
+		<!-- 라이브러리 하나를 정리할 수 있는 태그 -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -58,11 +58,10 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-
 	</dependencies>
 
 	<build>
-		<finalName>MessageSystem</finalName>
+		<finalName>MavenSample</finalName>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven
 			defaults (may be moved to parent pom) -->
 			<plugins>

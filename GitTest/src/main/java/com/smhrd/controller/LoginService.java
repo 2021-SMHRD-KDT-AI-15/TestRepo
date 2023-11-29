@@ -27,6 +27,8 @@ public class LoginService extends HttpServlet {
 
 		String email = request.getParameter("email");
 		String pw = request.getParameter("pw");
+		
+		System.out.println(email+pw);
 
 		// 3. MemberDAO 객체 생성
 
@@ -38,16 +40,18 @@ public class LoginService extends HttpServlet {
 		dto.setEmail(email);
 		dto.setPw(pw);
 
+		System.out.println(email+pw);
+		
 		MemberDTO result = dao.login(dto);
 
 		// 로그인에 성공했다면 회원정보를 공유할 수 있도록 session 영역에 저장해 페이지 이동
-		if (result != null) { // 로그인 성공
-			
-			HttpSession session = request.getSession();
-			session.setAttribute("info", result);
-
-		}
-
+//		if (result != null) { // 로그인 성공
+//			
+//			HttpSession session = request.getSession();
+//			session.setAttribute("info", result);
+//
+//		}
+//
 		response.sendRedirect("Main.jsp");
 
 	}

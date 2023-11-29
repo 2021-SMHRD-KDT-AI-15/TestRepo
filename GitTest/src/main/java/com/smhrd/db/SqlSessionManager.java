@@ -19,7 +19,7 @@ public class SqlSessionManager {
 
 		// static 블록 (= 초기화 블록) : 프로그램이 시작(=SqlSessionManager 클래스가 호출)되면 바로 진행되는 블록
 
-		String resource = "com/smhrd/db/Mybatis-config.xml";
+		String resource = "com/smhrd/db/mybatis-config.xml";
 		InputStream inputStream;
 
 		try {
